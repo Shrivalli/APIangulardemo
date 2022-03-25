@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-outline-primary btn-lg mt-5 ml-5" (click)="get_api()">GET</button>
+
+<div *ngFor="let item of players">
+    <div>{{item.p_Name}}</div>
+    <div>{{item.p_Age}}</div>
+    <div>{{item.p_Category}}</div>
+    <div>{{item.p_Jno}}</div>
+    </div>
+
+{{players|json}}
